@@ -24,6 +24,9 @@ public class Stopwatch {
 
             this.hours += this.minutes / 60;
             this.minutes = this.minutes % 60;
+
+            this.days += this.hours / 24;
+            this.hours = this.hours % 24;
         }
     }
 }
