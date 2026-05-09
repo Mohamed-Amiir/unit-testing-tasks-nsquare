@@ -7,15 +7,15 @@ public class Stopwatch {
     private int days;
 
     public int getMinutes() {
-        return -1;
+        return minutes;
     }
 
     public int getHours() {
-        return -1;
+        return hours;
     }
 
     public int getDays() {
-        return -1;
+        return hours;
     }
 
     public void addMinutes(int minutes) {
