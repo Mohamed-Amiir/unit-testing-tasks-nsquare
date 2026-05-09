@@ -21,6 +21,9 @@ public class Stopwatch {
     public void addMinutes(int minutes) {
         if (minutes > 0 ) {
             this.minutes += minutes;
+
+            this.hours += this.minutes / 60;
+            this.minutes = this.minutes % 60;
         }
     }
 }
