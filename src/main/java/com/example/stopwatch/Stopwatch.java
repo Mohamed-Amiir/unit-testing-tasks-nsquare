@@ -19,6 +19,8 @@ public class Stopwatch {
     }
 
     public void addMinutes(int minutes) {
-         this.minutes += minutes;
+        if (minutes > 0 ) {
+            this.minutes += minutes;
+        }
     }
 }
