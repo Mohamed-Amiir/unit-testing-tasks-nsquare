@@ -1,5 +1,6 @@
 package com.example.counter;
 
+import org.example.Printer;
 public class Counter {
 
     private int value;
@@ -19,6 +20,9 @@ public class Counter {
 
     public void increment() {
         value = (value + 1) % limit;
+        // my custom lib usage
+        Printer.show("Counter value: " + value);
+
     }
 
     public void add(int step) {
